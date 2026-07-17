@@ -2,9 +2,6 @@
 
 Chatbot konsultasi hukum berbahasa Indonesia yang menggabungkan **rule-based matching** dan **Machine Learning (TF-IDF + Logistic Regression)** untuk menjawab pertanyaan hukum masyarakat awam, termasuk yang menggunakan istilah informal sehari-hari (mis. "nyolong", "nipu").
 
-> Proyek ini dikembangkan sebagai Ujian Akhir Semester (UAS) mata kuliah **Kecerdasan Buatan**.
-
----
 
 ##  Daftar Isi
 

@@ -1,4 +1,4 @@
-# ⚖️ LAW AI — Chatbot Konsultasi Hukum Berbasis NLP
+#  LAW AI — Chatbot Konsultasi Hukum Berbasis NLP
 
 Chatbot konsultasi hukum berbahasa Indonesia yang menggabungkan **rule-based matching** dan **Machine Learning (TF-IDF + Logistic Regression)** untuk menjawab pertanyaan hukum masyarakat awam, termasuk yang menggunakan istilah informal sehari-hari (mis. "nyolong", "nipu").
 
@@ -6,7 +6,7 @@ Chatbot konsultasi hukum berbahasa Indonesia yang menggabungkan **rule-based mat
 
 ---
 
-## 📌 Daftar Isi
+##  Daftar Isi
 
 - [Latar Belakang](#-latar-belakang)
 - [Fitur Utama](#-fitur-utama)
@@ -21,7 +21,7 @@ Chatbot konsultasi hukum berbahasa Indonesia yang menggabungkan **rule-based mat
 
 ---
 
-## 📖 Latar Belakang
+##  Latar Belakang
 
 Akses terhadap informasi hukum di Indonesia masih menjadi tantangan bagi masyarakat awam. Bahasa hukum yang formal dan tersebar di berbagai peraturan (KUHP, KUHPerdata, UU ITE, UU Ketenagakerjaan, dll.) membuat masyarakat kesulitan memahami hak, kewajiban, maupun sanksi yang berlaku. Konsultasi langsung dengan praktisi hukum juga membutuhkan biaya dan waktu yang tidak selalu terjangkau.
 
@@ -34,17 +34,17 @@ Akses terhadap informasi hukum di Indonesia masih menjadi tantangan bagi masyara
 
 ---
 
-## ✨ Fitur Utama
+##  Fitur Utama
 
-- 🔎 **Pengenalan Peraturan Hukum** dari kalimat bebas pengguna (rule-based matching)
-- 🧠 **Klasifikasi Intent** pertanyaan (Definisi, Sanksi, Hak, Kewajiban, Prosedur, Persyaratan, dll.) menggunakan TF-IDF + Logistic Regression
-- 🔁 **Synonym Engine** — menerjemahkan istilah informal ("nyolong") ke istilah hukum baku ("pencurian")
-- 🎯 **FAQ Engine** berbasis cosine similarity untuk mencari jawaban paling relevan
-- 💾 Model tersimpan dalam format `.pkl` sehingga dapat dimuat ulang tanpa retraining
+-  **Pengenalan Peraturan Hukum** dari kalimat bebas pengguna (rule-based matching)
+-  **Klasifikasi Intent** pertanyaan (Definisi, Sanksi, Hak, Kewajiban, Prosedur, Persyaratan, dll.) menggunakan TF-IDF + Logistic Regression
+-  **Synonym Engine** — menerjemahkan istilah informal ("nyolong") ke istilah hukum baku ("pencurian")
+-  **FAQ Engine** berbasis cosine similarity untuk mencari jawaban paling relevan
+-  Model tersimpan dalam format `.pkl` sehingga dapat dimuat ulang tanpa retraining
 
 ---
 
-## 🏗️ Arsitektur Sistem
+##  Arsitektur Sistem
 
 Chatbot dibangun dari lima komponen utama yang saling terhubung dalam satu pipeline:
 
@@ -69,7 +69,7 @@ Input Pengguna
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 Knowledge base disusun secara mandiri dalam `Knowledge_Base.xlsx`, terdiri atas 5 sheet:
 
@@ -89,7 +89,7 @@ Knowledge base disusun secara mandiri dalam `Knowledge_Base.xlsx`, terdiri atas 
 
 ---
 
-## 🧹 Text Preprocessing
+##  Text Preprocessing
 
 1. **Text Cleaning** — lowercase, hapus URL/HTML/angka/tanda baca, rapikan spasi
    `"Apa HUKUMAN bagi orang yang NYOLONG motor???"` → `"apa hukuman bagi orang yang nyolong motor"`
@@ -101,7 +101,7 @@ Knowledge base disusun secara mandiri dalam `Knowledge_Base.xlsx`, terdiri atas 
 
 ---
 
-## 📈 Hasil Evaluasi
+##  Hasil Evaluasi
 
 Pengujian **Intent Recognizer** pada 15 data uji mencakup 7 kategori intent:
 
@@ -142,21 +142,21 @@ Skor *similarity* jawaban FAQ pada uji end-to-end mencapai **1.0** (kecocokan se
 
 ---
 
-## 🚧 Keterbatasan & Rencana Pengembangan
+##  Keterbatasan & Rencana Pengembangan
 
 **Keterbatasan:**
 - Data latih intent masih kecil (100 contoh untuk 10 kelas)
 - Model rentan salah klasifikasi pada pola kalimat implisit/baru
 
 **Rencana pengembangan:**
-- 📈 Menambah variasi data latih intent (puluhan–ratusan contoh per kelas)
-- 🤖 Eksperimen model lanjutan (SVM, IndoBERT)
-- 🧩 Penanganan kalimat implisit tanpa bergantung penuh pada token `<HUKUM>`
-- 🌐 Deployment ke web/WhatsApp/Telegram Bot agar dapat diakses masyarakat umum
+-  Menambah variasi data latih intent (puluhan–ratusan contoh per kelas)
+-  Eksperimen model lanjutan (SVM, IndoBERT)
+-  Penanganan kalimat implisit tanpa bergantung penuh pada token `<HUKUM>`
+-  Deployment ke web/WhatsApp/Telegram Bot agar dapat diakses masyarakat umum
 
 ---
 
-## 📚 Referensi
+##  Referensi
 
 1. Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830.
 2. Ramos, J. (2003). Using TF-IDF to determine word relevance in document queries.
@@ -167,7 +167,7 @@ Skor *similarity* jawaban FAQ pada uji end-to-end mencapai **1.0** (kecocokan se
 
 ---
 
-## 👤 Anggota Kelompok
+##  Anggota Kelompok
 
 | Nama | NIM |
 |---|---|

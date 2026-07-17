@@ -169,6 +169,4 @@ Skor *similarity* jawaban FAQ pada uji end-to-end mencapai **1.0** (kecocokan se
 |---|---|
 | Albar Hifdzi Alkariem | 2406092 |
 
----
 
-<p align="center">Dibuat untuk memenuhi Ujian Akhir Semester mata kuliah Kecerdasan Buatan</p>

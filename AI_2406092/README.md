@@ -160,10 +160,9 @@ Skor *similarity* jawaban FAQ pada uji end-to-end mencapai **1.0** (kecocokan se
 
 1. Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830.
 2. Ramos, J. (2003). Using TF-IDF to determine word relevance in document queries.
-3. Salton, G., & Buckley, C. (1988). Term-weighting approaches in automatic text retrieval. *Information Processing & Management*, 24(5), 513-523.
-4. Republik Indonesia. *Kitab Undang-Undang Hukum Pidana* (UU No. 1 Tahun 2023).
-5. Republik Indonesia. *Undang-Undang Informasi dan Transaksi Elektronik* (UU No. 1 Tahun 2024).
-6. Jurafsky, D., & Martin, J. H. (2023). *Speech and Language Processing* (3rd ed. draft). Stanford University.
+3. Republik Indonesia. *Kitab Undang-Undang Hukum Pidana* (UU No. 1 Tahun 2023).
+4. Republik Indonesia. *Undang-Undang Informasi dan Transaksi Elektronik* (UU No. 1 Tahun 2024).
+5. Jurafsky, D., & Martin, J. H. (2023). *Speech and Language Processing* (3rd ed. draft). Stanford University.
 
 ---
 

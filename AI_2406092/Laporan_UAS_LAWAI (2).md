@@ -92,37 +92,37 @@ Sebelum masuk ke tahap *data preparation*, dilakukan eksplorasi data untuk memah
 
 ### 4.1 Distribusi Jumlah Pasal per Peraturan
 
-![Jumlah Pasal per Peraturan](images/1_bar_pasal_per_peraturan.png)
+![Jumlah Pasal per Peraturan](Gambar/1_bar_pasal_per_peraturan.png)
 
 KUHP dan KUHPerdata memiliki jumlah pasal terbanyak (masing-masing 25 pasal) dibanding 13 peraturan lain yang masing-masing memiliki 20 pasal, mencerminkan cakupan topik yang lebih luas pada kedua kitab hukum utama tersebut.
 
 ### 4.2 Proporsi Kategori Peraturan
 
-![Proporsi Kategori Peraturan](images/2_pie_kategori_peraturan.png)
+![Proporsi Kategori Peraturan](Gambar/2_pie_kategori_peraturan.png)
 
 Dari 15 peraturan yang dicakup, kategori **Pidana** mendominasi (4 peraturan), sedangkan 9 kategori lain (Perdata, Konsumen, Ketenagakerjaan, Kesehatan, dll.) masing-masing hanya diwakili oleh 1 peraturan. Hal ini menunjukkan knowledge base cukup terpusat pada topik pidana/kejahatan yang paling sering ditanyakan masyarakat awam.
 
 ### 4.3 Distribusi Label Intent pada Data Latih (Deteksi Imbalanced Class)
 
-![Distribusi Label Intent](images/3_bar_distribusi_intent.png)
+![Distribusi Label Intent](Gambar/3_bar_distribusi_intent.png)
 
 Berbeda dari dugaan awal, hasil EDA menunjukkan **data latih Intent justru seimbang sempurna**: seluruh 10 kelas intent memiliki tepat 10 contoh kalimat (standar deviasi = 0), sehingga tidak terjadi *class imbalance*. Namun, jumlah 10 contoh per kelas tergolong **sangat sedikit**, yang menjadi kandidat penyebab utama akurasi klasifikasi intent yang belum optimal (lihat Bagian 7).
 
 ### 4.4 Distribusi Panjang Kalimat
 
-![Distribusi Panjang Kalimat](images/4_hist_panjang_kalimat.png)
+![Distribusi Panjang Kalimat](Gambar/4_hist_panjang_kalimat.png)
 
 Rata-rata panjang pertanyaan pada sheet FAQ adalah 5,3 kata (rentang 3–10 kata), sedangkan rata-rata panjang contoh kalimat pada sheet Intent adalah 4,36 kata (rentang 3–7 kata). Kalimat yang pendek ini membuat fitur teks yang tersedia bagi model klasifikasi relatif terbatas, terutama untuk kalimat tanpa istilah hukum eksplisit.
 
 ### 4.5 Korelasi Antar Fitur: Heatmap Kategori Peraturan × Intent
 
-![Heatmap Kategori vs Intent](images/5_heatmap_kategori_intent.png)
+![Heatmap Kategori vs Intent](Gambar/5_heatmap_kategori_intent.png)
 
 Karena dataset bersifat kategorikal, analisis korelasi diadaptasi menjadi heatmap crosstab antara kategori peraturan dan label intent pada sheet FAQ (8 intent tersering). Intent "Definisi" tersebar cukup merata di berbagai kategori, sedangkan intent yang lebih spesifik cenderung terkonsentrasi pada kategori Pidana dan Siber — pola ini konsisten dengan karakteristik topik hukum masing-masing kategori.
 
 ### 4.6 Kata Kunci Pasal yang Paling Sering Muncul
 
-![Top Kata Kunci](images/6_bar_top_kata_kunci.png)
+![Top Kata Kunci](Gambar/6_bar_top_kata_kunci.png)
 
 Kata kunci yang paling sering muncul pada kolom `kata_kunci` sheet Articles adalah "definisi", "ganti rugi", dan "hak anak", menunjukkan knowledge base cukup menekankan aspek definisi serta hak/kewajiban dasar dibanding istilah prosedural yang lebih teknis.
 
